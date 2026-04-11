@@ -5,18 +5,21 @@ class A{
 	int a,b;
 	int c;
 	int d;
-	A(int m,int n){
+	A(int m,int n);
+	void perimeter();
+	void area();
+};
+	A::A(int m,int n){
 		a=m,b=n;
 	}
-	void perimeter(){
+	void A::perimeter(){
 		c=(a+b)*2;
 		cout<<c<<endl;
 	}
-	void area(){
+	void A::area(){
 		d=a*b;
 		cout<<d<<endl;
 	}
-};
 int main (){
 	A one(3,4);
 	one.perimeter();
